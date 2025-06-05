@@ -1,0 +1,59 @@
+/* Reset some styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation styles */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
+/* Scrolled class adds a different background */
+nav.scrolled {
+  background-color: #333;
+}
+
+/* Page sections */
+section {
+  height: 100vh;
+  padding-top: 80px; /* To prevent content hiding behind fixed nav */
+  text-align: center;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+}
